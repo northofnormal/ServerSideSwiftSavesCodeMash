@@ -1,0 +1,4 @@
+module CNIOOpenSSL {
+    umbrella "/Users/annecahalan/Development/SSS-Vapor/CodeMash/Vapor/SavingCodeMash/.build/checkouts/swift-nio-ssl/Sources/CNIOOpenSSL/include"
+    export *
+}

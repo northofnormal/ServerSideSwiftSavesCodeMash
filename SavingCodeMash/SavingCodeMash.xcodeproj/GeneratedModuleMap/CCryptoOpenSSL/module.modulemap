@@ -1,0 +1,4 @@
+module CCryptoOpenSSL {
+    umbrella "/Users/annecahalan/Development/SSS-Vapor/CodeMash/Vapor/SavingCodeMash/.build/checkouts/crypto/Sources/CCryptoOpenSSL/include"
+    export *
+}

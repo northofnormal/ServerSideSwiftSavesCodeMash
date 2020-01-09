@@ -1,0 +1,27 @@
+#set("content") {
+    <h1>#(title)</h1>
+
+    <form method="post">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" name="title" class="form-control" id="title" #if(editing){value="#(note.title)"}/>
+        </div>
+        <div class="form-group">
+            <label for="presenter">Presenter</label>
+            <input type="text" name="presenter" class="form-control" id="presenter" #if(editing){value="#(note.presenter)"}/>
+        </div>
+        <div class="form-group">
+            <label for="notes">Notes</label>
+            <input type="text" name="notes" class="form-control" id="notes" #if(editing){value="#(note.notes)"}/>
+        </div>
+        <div class="form-group">
+            <label for="rating">Rating</label>
+            <input type="text" name="rating" class="form-control" id="rating" #if(editing){value="#(note.rating)"}/>
+        </div>
+        <button type="submit" class="btn btn-primary">
+            #if(editing){Save} else{Submit}
+        </button>
+    </form>
+}
+
+#embed("base")

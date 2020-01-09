@@ -1,0 +1,25 @@
+#set("content") {
+    <h1>Hello CodeMash!</h1>
+    #if(notes) {
+    <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th>Session title</th>
+                <th>Presenter</th>
+            </tr>
+        </thead>
+        <tbody>
+            #for(note in notes) {
+            <tr>
+                <td><a href="/notes/#(note.id)">#(note.title)</a></td>
+                <td>#(note.presenter)</td>
+                <tr>
+                    }
+                    </tbody>
+    </table>
+    } else {
+    <h2>You don't have any notes yet!</h2>
+    }
+}
+
+#embed("base")

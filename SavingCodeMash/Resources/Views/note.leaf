@@ -1,0 +1,13 @@
+#set("content") {
+    <h1>#(title)</h1>
+    <h2>#(presenter)</h2>
+    <p>#(notes)</p>
+    <p>Rating: #(rating)</p>
+
+    <form method="post" action="/notes/#(id)/delete">
+      <a class="btn btn-primary" href="/notes/#(id)/edit" role="button">Edit</a>
+      <input class="btn btn-danger" type="submit" value="Delete" />
+    </form>
+}
+
+#embed("base")
